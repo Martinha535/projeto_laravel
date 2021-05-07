@@ -1,0 +1,18 @@
+.menu {
+    background-color: red;
+}
+
+.menu-opcoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.menu-opcoes a {
+    color: white;
+    font-size: 15px;
+}
+
+.menu-opcoes li {
+    list-style-type: none;
+}
