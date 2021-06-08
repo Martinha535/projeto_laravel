@@ -293,8 +293,8 @@
                     }
 
                 }
-
-                <script src="https://unpkg.com/blip-chat-widget" type="text/javascript">
+</script>
+<script src="https://unpkg.com/blip-chat-widget" type="text/javascript">
 </script>
 <script>
     (function () {
@@ -307,6 +307,7 @@
         }
     })();
 </script>
+                                
             
 </body>
 
