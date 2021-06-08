@@ -14,6 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/', function () {
+    return view('covid');
+});
+
 Route::get('/projeto', function () {
     return view('covid');
 });
