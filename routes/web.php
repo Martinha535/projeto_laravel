@@ -41,4 +41,5 @@ Route::get('/sobre','PacienteController@sobre')->name('paciente.sobre');
 Route::get('/finalizar','PacienteController@finalizar')->name('paciente.finalizar');
 Route::get('/login','loginController@login')->name('login.login');
 
+
 });
