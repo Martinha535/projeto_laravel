@@ -25,7 +25,7 @@ Route::get('/projeto', function () {
 
 
 Route::get('paciente', array('as' => 'paciente', 'uses' =>'PacienteController@paciente'));
-Route::post('paciente', ' PacienteController @postPaciente');
+Route::post('paciente', 'PacienteController@postPaciente');
 
 Route::get('/paciente', 'PacienteController@paciente');
 
@@ -33,13 +33,12 @@ Route::group(['prefix'=> 'paciente'], function (){
 Route::get('/covid','PacienteController@covid')->name('paciente.covid');
 Route::get('/cadastrar','PacienteController@cadastrar')->name('paciente.cadastrar');
 Route::get('/queixa','PacienteController@queixa')->name('paciente.queixa');
-Route::post('/queixa', 'PacienteController@criarQueixa')->name('paciente.queixa.criar'); 
+Route::post('/queixa','PacienteController@criarQueixa')->name('paciente.queixa.criar'); 
 Route::get('/informar','PacienteController@informar')->name('paciente.informar');
-Route::get('/login','PacienteController@login')->name('paciente.login');
 Route::get('/opinar','PacienteController@opinar')->name('paciente.opinar');
 Route::get('/sobre','PacienteController@sobre')->name('paciente.sobre');
 Route::get('/finalizar','PacienteController@finalizar')->name('paciente.finalizar');
-Route::get('/login','loginController@login')->name('login');
-Route::get('/login','LoginController@login')->middleware('login');
+Route::get('/login','PacienteController@login')->name('paciente.login');
+Route::get('/logar','loginController@login')->name('login');
 
 });
