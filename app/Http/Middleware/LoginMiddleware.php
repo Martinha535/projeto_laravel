@@ -15,8 +15,8 @@ class LoginMiddleware
      * @return mixed
      */
     public function handle(Request $request, Closure $next){  
-        if(!session('usuário'))
-            return redirect()->route('login')
+        if(!session('usuario'))
+            return redirect()->route('paciente.login')
                 ->with('erro','login expirado');
         return $next($request);
     }

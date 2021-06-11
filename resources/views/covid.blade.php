@@ -93,7 +93,7 @@
 <body>
 
     @ section()
-    <h1>{{session('usuário')}}
+    <h1>{{session('usuario')}}
         
     <div style="text-align:center">
         <div class="imagem">

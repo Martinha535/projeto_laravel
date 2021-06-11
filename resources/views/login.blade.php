@@ -64,21 +64,22 @@ display: flex">;
                     <table border="1" cellpadding="30" bgcolor="white">
                         <tr>
                             <td>
-                                <form action="" method="post">
+                                <form action="{{route('login')}}" method="post">
+                                @csrf
                                 @include('_menu')
                                 <h1 style="font-size: 40px"><strong>Dados para Login:</strong></h1>
                                     </div><br /><br />
                                     <div class="form-group row">
                                         <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
                                         <div class="col-sm-10">
-                                            <input type="text" readonly class="form-control-plaintext" id="staticEmail"
+                                            <input name="email"type="text"class="form-control-plaintext" id="staticEmail"
                                                 value="email@exemplo.com">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="inputPassword" class="col-sm-2 col-form-label">Senha</label>
                                         <div class="col-sm-10">
-                                            <input type="password" class="form-control" id="inputPassword"
+                                            <input name="senha"type="password" class="form-control" id="inputPassword"
                                                 placeholder="Senha">
                                         </div>
                                     </div>
