@@ -14,10 +14,10 @@ class LoginMiddleware
      * @param  \Closure  $next
      * @return mixed
      */
-    public function handle(Request $request, Closure $next)
-    {   $resposta = $next($request);
-
-
-        return $resposta;
+    public function handle(Request $request, Closure $next){  
+        if(!session('usuário'))
+            return redirect()->route('login')
+                ->with('erro','login expirado');
+        return $next($request);
     }
 }
