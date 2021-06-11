@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Paciente;
 use Illuminate\Routing\RouteGroup;
 use Illuminate\Support\Facades\Route;
 
@@ -22,6 +23,9 @@ Route::get('/projeto', function () {
     return view('covid');
 });
 
+Route::get('teste', function(){
+    Paciente
+});
 
 
 Route::get('paciente', array('as' => 'paciente', 'uses' =>'PacienteController@paciente'));
