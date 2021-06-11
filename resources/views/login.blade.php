@@ -64,6 +64,7 @@ display: flex">;
                     <table border="1" cellpadding="30" bgcolor="white">
                         <tr>
                             <td>
+                                <form action="" method="post">
                                 @include('_menu')
                                 <h1 style="font-size: 40px"><strong>Dados para Login:</strong></h1>
                                     </div><br /><br />
@@ -81,6 +82,7 @@ display: flex">;
                                                 placeholder="Senha">
                                         </div>
                                     </div>
+                    
                                     <div class="form-group row">
                                         <label for="inputPassword" class="col-sm-2 col-form-label">Confirmar
                                             Senha</label>
@@ -106,6 +108,7 @@ display: flex">;
                                             <table border="1" align="center" cellpadding="30" bgcolor="white">
                                                 <tr>
                                                     <td>
+                                                    </form>
                                                         <h3 style="font-size: 20px"><strong>Nosso
                                                                 maior foco é com a prevenção e
                                                                 controle

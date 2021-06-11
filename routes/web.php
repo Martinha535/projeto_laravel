@@ -22,6 +22,8 @@ Route::get('/projeto', function () {
     return view('covid');
 });
 
+
+
 Route::get('paciente', array('as' => 'paciente', 'uses' =>'PacienteController@paciente'));
 Route::post('paciente', ' PacienteController @postPaciente');
 
@@ -37,4 +39,6 @@ Route::get('/login','PacienteController@login')->name('paciente.login');
 Route::get('/opinar','PacienteController@opinar')->name('paciente.opinar');
 Route::get('/sobre','PacienteController@sobre')->name('paciente.sobre');
 Route::get('/finalizar','PacienteController@finalizar')->name('paciente.finalizar');
+Route::get('/login','loginController@login')->name('login.login');
+
 });
