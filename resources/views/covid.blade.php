@@ -91,6 +91,10 @@
 </head>
 
 <body>
+
+    @ section()
+    <h1>{{session('usuário')}}
+        
     <div style="text-align:center">
         <div class="imagem">
             <div class="texto">
