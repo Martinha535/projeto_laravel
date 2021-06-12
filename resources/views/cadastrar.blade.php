@@ -205,7 +205,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-md-2 control-label" for="prependedtext">Endereço</label>
+                            <label class="col-md-2 control-label" for="prependedtext">Endereco</label>
                             <div class="col-md-4">
                                 <div class="input-group">
                                     <span class="input-group-addon">Rua</span>
