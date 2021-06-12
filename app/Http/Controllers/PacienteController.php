@@ -54,7 +54,6 @@ class PacienteController extends Controller
         'mensagem' => 'required'
       ]);
 
-      
 
       return redirect()->route('paciente.finalizar')->with('sucesso', 'Queixa cadastrada com sucesso');    
     }
