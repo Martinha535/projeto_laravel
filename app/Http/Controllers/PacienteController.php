@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Paciente;
+use App\Models\Paciente;
 use Illuminate\Support\Facades\Redirect;
 
 class PacienteController extends Controller
@@ -105,8 +105,10 @@ class PacienteController extends Controller
         'Insonia?'=>$request->Insonia,
         'Depressao?'=>$request->Depressao,
         'cor'=>$request->Cor,
-        $obj=>save();
-      ])
+        
+      ]);
+    
+      $paciente->save();
 
 
       return redirect()->route('paciente.finalizar')->with('sucesso', 'Queixa cadastrada com sucesso');    
