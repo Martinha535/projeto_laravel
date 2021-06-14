@@ -28,12 +28,12 @@ Route::get('teste', function(){
 });
 
 
-Route::get('paciente', array('as' => 'paciente', 'uses' =>'PacienteController@paciente'));
-Route::post('paciente', 'PacienteController@postPaciente');
+Route::get('paciente',array('as'=>'paciente', 'uses'=>'PacienteController@paciente'));
+Route::post('paciente','PacienteController@postPaciente');
 
-Route::get('/paciente', 'PacienteController@paciente');
+Route::get('/paciente','PacienteController@paciente');
 
-Route::group(['prefix'=> 'paciente'], function (){
+Route::group(['prefix'=>'paciente'], function ){
 Route::get('/covid','PacienteController@covid')->name('paciente.covid');
 Route::get('/cadastrar','PacienteController@cadastrar')->name('paciente.cadastrar');
 Route::get('/queixa','PacienteController@queixa')->name('paciente.queixa');
