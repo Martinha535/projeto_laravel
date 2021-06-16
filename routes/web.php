@@ -36,6 +36,7 @@ Route::get('/paciente', 'PacienteController@paciente');
 Route::group(['prefix' => 'paciente'], function () {
     Route::get('/covid', 'PacienteController@covid')->name('paciente.covid');
     Route::get('/cadastrar', 'PacienteController@cadastrar')->name('paciente.cadastrar');
+    Route::post('/cadastrar', 'PacienteController@criarPaciente')->name('paciente.cadastrar.criar');
     Route::get('/queixa', 'PacienteController@queixa')->name('paciente.queixa');
     Route::post('/queixa', 'PacienteController@criarQueixa')->name('paciente.queixa.criar');
     Route::get('/opinar', 'PacienteController@opinar')->name('paciente.opinar');

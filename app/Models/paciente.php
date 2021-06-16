@@ -9,5 +9,5 @@ class Paciente extends Model
 {
     use HasFactory;
 
-    protected $guarded = [];
+    protected $guarded = ['Senha'];
 }
