@@ -36,6 +36,7 @@ class PacienteController extends Controller
     public function login(){
       return view('login');
     }
+    
  
 	/**
      * Exibe um formulário de queixas do paciente
